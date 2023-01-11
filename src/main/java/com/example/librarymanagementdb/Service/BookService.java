@@ -45,6 +45,11 @@ public class BookService {
         listOfBooks.add(book);
         author.setBooksWritten(listOfBooks);
 
+        authorRepository.save(author);
+
+        //no need to save book as book is auto saved
+        // when saving author due to cascading
+
         return "Book added successfully";
     }
     public Book findBook(int id) throws Exception{

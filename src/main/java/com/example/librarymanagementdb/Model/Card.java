@@ -19,6 +19,11 @@ public class Card {
     private int id;
     @Enumerated(value = EnumType.STRING)
     private CardStatus cardStatus;
-    @OneToMany(mappedBy = "card", cascade = CascadeType.ALL)
+    @OneToOne
+    @JoinColumn
+    private Student student;
+
+    @OneToMany(mappedBy = "card",cascade = CascadeType.ALL)
     private List<Book> booksIssued;
+
 }

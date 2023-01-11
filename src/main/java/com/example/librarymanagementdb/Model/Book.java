@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity   //create the same in schema
-@Table    //table name in schema if provided
+@Table    // table name in schema if provided
 @Builder
 @Data
 @AllArgsConstructor

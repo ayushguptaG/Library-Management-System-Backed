@@ -4,6 +4,7 @@ import com.example.librarymanagementdb.RequestDto.BookRequestDto;
 import com.example.librarymanagementdb.Service.BookService;
 import com.example.librarymanagementdb.Model.Book;
 import com.example.librarymanagementdb.UpdateBookPages;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
